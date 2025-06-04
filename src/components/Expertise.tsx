@@ -9,6 +9,7 @@ import {
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
 import { faMobile } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const labelsFirst = [
   "React",
@@ -56,7 +57,7 @@ function Expertise() {
         <h1>Expertise</h1>
         <div className="skills-grid">
           <div className="skill">
-            <FontAwesomeIcon icon={faReact} size="3x" />
+            <FontAwesomeIcon icon={faReact as IconProp} size="3x" />
             <h3>Full Stack Web Development</h3>
             <p>
               I have built a diverse array of web applications from scratch
@@ -73,7 +74,7 @@ function Expertise() {
           </div>
 
           <div className="skill">
-            <FontAwesomeIcon icon={faMobile} size="3x" />
+            <FontAwesomeIcon icon={faMobile as IconProp} size="3x" />
             <h3>Mobile Developer</h3>
             <p>
               I have extensive experience in building robust applications,

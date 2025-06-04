@@ -8,6 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "../assets/styles/Timeline.scss";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 function Timeline() {
   return (
@@ -36,7 +37,7 @@ function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  white" }}
             date="April 23 - present"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            icon={<FontAwesomeIcon icon={faBriefcase as IconProp} />}
           >
             <h3 className="vertical-timeline-element-title">
               Software Developer-II, Anarock
@@ -52,7 +53,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             date="November 21 - Apr 23"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            icon={<FontAwesomeIcon icon={faBriefcase as IconProp} />}
           >
             <h3 className="vertical-timeline-element-title">
               Software Developer, Anarock
@@ -66,7 +67,7 @@ function Timeline() {
             className="vertical-timeline-element--work"
             date="July 2021 - 2023"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            icon={<FontAwesomeIcon icon={faBriefcase as IconProp} />}
           >
             <h3 className="vertical-timeline-element-title">
               Associate Software Engineer
